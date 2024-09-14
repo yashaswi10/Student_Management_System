@@ -44,10 +44,11 @@ The Student Management System is a web application that allows users to manage s
 2. **Install Dependencies**
 
    Navigate to the project directory and install the required Node.js packages:
+   ```bash
    npm init -y
    npm install express mysql2 cors
 
-3. **Set Up MySQL Database**
+4. **Set Up MySQL Database**
    
   - **Create the Database:**
     - Log in to your MySQL server and create a new database:
