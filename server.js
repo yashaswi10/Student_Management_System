@@ -10,7 +10,7 @@ app.use(express.json());  // To parse JSON request body
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'Yashaswi@10',  // Replace with your MySQL root password
+    password: 'your_password',  // Replace with your MySQL root password
     database: 'student_management'
 });
 
