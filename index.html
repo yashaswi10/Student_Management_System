@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center">Student Management System</h1>
+        <div class="input-container">
+            <input type="text" placeholder="Name" id="name">
+            <input type="email" placeholder="Email" id="email" required>
+            <input type="text" placeholder="GPA (3-10)" id="gpa" min="3" max="10" step="0.01" required>
+            <input type="number" placeholder="Age (10-70)" id="age" min="10" max="70" required>
+            <!-- <input type="text" placeholder="Degree" id="degree"> -->
+            <select id="degree" required>
+                <option value="">Select Degree</option>
+                <option value="CSE">Computer Science and Engineering (CSE)</option>
+                <option value="ECE">Electronics and Communication Engineering (ECE)</option>
+                <option value="EEE">Electrical and Electronics Engineering (EEE)</option>
+                <option value="MME">Metallurgical and Materials Engineering (MME)</option>
+                <option value="ME">Mechanical Engineering (ME)</option>
+                <option value="CE">Civil Engineering (CE)</option>
+                <option value="CHE">Chemical Engineering (CHE)</option>
+                <option value="BT">Biotechnology (BT)</option>
+                <option value="IT">Information Technology (IT)</option>
+            </select>
+            <input type="hidden" id="studentId"> <!-- Hidden field to store student ID for editing -->
+        </div>
+        <button class="button" id="submit" onclick="addOrUpdateStudent()">Add Student</button>
+        <input class="search" type="text" id="search" onkeyup="search()" placeholder="Search By Name, Email, or Degree">
+        <table class="table" id="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>GPA</th>
+                    <th>Degree</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
