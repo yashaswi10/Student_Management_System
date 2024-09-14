@@ -116,4 +116,4 @@ The Student Management System is a web application that allows users to manage s
    ```bash
    node server.js
 
-   - Open your web browser and navigate to http://localhost:3000 to access the application.
+  - Open your web browser and navigate to http://localhost:3000 to access the application.
