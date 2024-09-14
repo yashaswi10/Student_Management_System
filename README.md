@@ -52,7 +52,7 @@ The Student Management System is a web application that allows users to manage s
   - **Create the Database:**
     - Log in to your MySQL server and create a new database:
       
-    sql
+    ```sql
     CREATE DATABASE student_management;
 
   - **Create the Tables**
@@ -79,7 +79,7 @@ The Student Management System is a web application that allows users to manage s
 4. **Configure the Server**
 
 - **Edit Database Configuration**
-  Open server.js and configure the MySQL connection with your database credentials. Update the following section with your MySQL user, password, and database name:
+  - Open server.js and configure the MySQL connection with your database credentials. Update the following section with your MySQL user, password, and database name:
 
   ```javascript
   const mysql = require('mysql');
@@ -115,4 +115,4 @@ The Student Management System is a web application that allows users to manage s
    ```bash
    node server.js
 
-   - Open your web browser and navigate to http://localhost:3000 to access the application.
+  - Open your web browser and navigate to http://localhost:3000 to access the application.
